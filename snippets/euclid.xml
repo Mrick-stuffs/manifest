@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+    <remote  name="euclid"
+            fetch="https://github.com/Mrick-stuffs"
+            revision="refs/heads/fourteen" />
+
+    <remote  name="euclid-Gitlab"
+            fetch="https://gitlab.com/Mrick343"
+            revision="refs/heads/fourteen" />
+
+
+   <!-- Frameworks -->
+   <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="euclid" />
+   <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" remote="euclid" />
+
+   <!-- Packages repos -->
+   <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="euclid" />
+   <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="euclid" />
+   <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="euclid" />
+   <project path="packages/apps/ParanoidSense" name="packages_apps_ParanoidSense" remote="euclid" />
+
+   <!-- Vendor repos -->
+   <project path="vendor/aosp" name="vendor_aosp" remote="euclid" />
+   <project path="vendor/gms" name="vendor_gms" clone-depth="1" remote="euclid-Gitlab" />
+
+   <!-- Hardware repos -->
+   <project path="hardware/interfaces" name="hardware_interfaces" remote="euclid" />
+
+</manifest>
